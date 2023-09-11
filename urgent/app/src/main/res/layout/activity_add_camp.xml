@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/form_background">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="131dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/donation_logo"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Blood Donation Camp"
+        android:textColor="#CE0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264"
+        android:paddingTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Scroll View">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campName"
+                    android:layout_width="338dp"
+                    android:layout_height="60dp"
+                    android:hint="Organization name"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.339" />
+
+                <EditText
+                    android:id="@+id/campPhone"
+                    android:layout_width="338dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="Phone Number "
+                    android:inputType="phone"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.534"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.439" />
+
+                <EditText
+                    android:id="@+id/campDate"
+                    android:layout_width="338dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.534"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.537" />
+
+                <EditText
+                    android:id="@+id/campTime"
+                    android:layout_width="337dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="Time"
+                    android:inputType="time"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.527"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.634" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campLocation"
+                    android:layout_width="337dp"
+                    android:layout_height="60dp"
+                    android:hint="Location"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.527"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.732" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campDescription"
+                    android:layout_width="337dp"
+                    android:layout_height="60dp"
+                    android:hint="Description"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.834" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                            <Button
+                                android:id="@+id/backButtonCamp"
+                                android:layout_width="161dp"
+                                android:layout_height="51dp"
+                                android:background="@drawable/round_button"
+                                android:text="Home"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.156"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.955" />
+
+                            <Button
+                                android:id="@+id/addNewCamp"
+                                android:layout_width="161dp"
+                                android:layout_height="51dp"
+                                android:background="@drawable/round_button"
+                                android:text="Add New Camp"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="15dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.856"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.953" />
+
+                    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

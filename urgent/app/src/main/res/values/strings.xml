@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">urgent</string>
+    <string name="title_activity_google_map">googleMap</string>
+    <string-array name="bloodGroups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>

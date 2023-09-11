@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".aboutUs">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CE0000"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
+        android:text="URGENT"
+        android:textAlignment="center"
+        android:textColor="#CE0000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ScrollView
+        android:layout_width="394dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Welcome to URGENT, the mobile application dedicated to connecting blood donors with individuals in need of blood transfusions in Sri Lanka. Our app strives to streamline the blood donation process, making it easier than ever for donors to contribute and save lives.\n\nOur mission is to facilitate the blood donation process in Sri Lanka by connecting donors with those in need. URGENT serves as an indispensable tool, providing a seamless experience for donors to register, participate in blood donation camps, and stay informed about blood shortages. With your help, we can create a stronger and healthier community, one donation at a time.\n\nJoin URGENT today and become a part of this life-saving movement. Together, we can make a difference and ensure that no one is left waiting for the gift of life. \n\n\n Designed By - G.G.Maleesha | S92077488"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:background="@drawable/round_button"
+        android:onClick="backToHome"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="139dp"
+        android:layout_height="119dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.893"
+        app:srcCompat="@drawable/logo_new" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

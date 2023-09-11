@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/form_background">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Blood Donation Camp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Scroll View">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateCampName"
+                android:layout_width="338dp"
+                android:layout_height="60dp"
+                android:hint="Organization name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/updateCampPhone"
+                android:layout_width="338dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:hint="Phone Number "
+                android:inputType="phone"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/updateCampDate"
+                android:layout_width="338dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/updateCampTime"
+                android:layout_width="337dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:hint="Time"
+                android:inputType="time"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateCampLocation"
+                android:layout_width="337dp"
+                android:layout_height="60dp"
+                android:hint="Location"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateCampDescription"
+                android:layout_width="337dp"
+                android:layout_height="60dp"
+                android:hint="Description"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/updateCampId"
+                android:layout_marginTop="30dp"
+                android:layout_width="338dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:hint="Enter ID to Update"
+                android:inputType="phone"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/updateViewButton"
+                    android:layout_width="161dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/round_button"
+                    android:text="View Camp List"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/updateCampButton"
+                    android:layout_width="161dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/round_button"
+                    android:text="Update Camp"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
